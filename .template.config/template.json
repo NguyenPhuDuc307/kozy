@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "NguyenPhuDuc307",
+    "classifications": [
+        "Web",
+        "API"
+    ],
+    "identity": "NguyenPhuDuc307.WebApiJWT",
+    "name": "Web Api JWT",
+    "shortName": "web-api-jwt",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "kozy",
+    "preferNameDirectory": true
+}

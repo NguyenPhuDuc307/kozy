@@ -1,0 +1,37 @@
+services:
+  kozy-api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    container_name: kozy-api
+    environment:
+      - ASPNETCORE_URLS=http://+:8080
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=kozy-api;Username=;Password=password123
+    depends_on:
+      - postgres
+    networks:
+      - kozy-network
+
+  postgres:
+    image: postgres:15
+    container_name: kozy-postgres
+    environment:
+      POSTGRES_DB: kozy
+      POSTGRES_USER: ducnp
+      POSTGRES_PASSWORD: password123
+    ports:
+      - "5435:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - kozy-network
+
+volumes:
+  postgres_data:
+
+networks:
+  kozy-network:
+    driver: bridge

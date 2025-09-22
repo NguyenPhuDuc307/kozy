@@ -1,0 +1,73 @@
+# .NET build artifacts
+bin/
+obj/
+out/
+
+# Test results and coverage
+TestResults/
+CoverageReport/
+*.coverage
+*.coveragexml
+
+# SonarQube files
+.sonarqube/
+
+# Development files
+*.Development.json
+appsettings.Development.json
+
+# Git and version control
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+README.md
+*.md
+
+# IDE files
+.vs/
+.vscode/
+*.sln.docstates
+*.userprefs
+*.pidb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Scripts and tools
+*.sh
+*.bat
+*.ps1
+
+# Sensitive files
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker files (to avoid nested Docker builds)
+Dockerfile*
+docker-compose*

@@ -1,0 +1,6 @@
+[ReportGenerator]
+	reports = "./TestResults/*/coverage.cobertura.xml"
+	targetdir = "./CoverageReport"
+	reporttypes = "Html"
+	title = "Coverage Report"
+	classfilters = "+kozy_api.Controllers.*;+kozy_api.Services.*;-*Tests"

@@ -1,0 +1,26 @@
+@kozy_api_HostAddress = http://localhost:5230/api
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3NTg1MTI0MTYsImV4cCI6MTc1ODUxNjAxNiwiaWF0IjoxNzU4NTEyNDE2LCJpc3MiOiJZb3VySXNzdWVyIiwiYXVkIjoiWW91ckF1ZGllbmNlIn0.mEVn0OS3eXjZ2rxW5l4B4NXy3P79IXRohb42KcskZBs
+
+### 1.1. Register
+POST {{kozy_api_HostAddress}}/auth/register
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.vn",
+  "password": "Admin@123"
+}
+
+### 1.2. Login
+POST {{kozy_api_HostAddress}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.vn",
+  "password": "Admin@123"
+}
+
+### 1.3. Get All Users
+GET {{kozy_api_HostAddress}}/auth
+Authorization: Bearer {{token}}
+Content-Type: application/json
+

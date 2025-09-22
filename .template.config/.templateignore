@@ -1,0 +1,104 @@
+# Template Ignore File
+
+## Ignore IDE-specific files and folders
+
+.DS_Store
+.vscode/
+*.template.config/
+
+## Ignore build outputs and compiled files
+
+**/bin/
+**/obj/
+**/TestResults/
+**/node_modules/
+**/dist/
+**/build/
+
+## Ignore log files
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## Ignore environment and configuration files
+
+appsettings.Development.json
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+## Ignore package manager files
+
+package-lock.json
+yarn.lock
+
+## Ignore database files
+
+*.db
+*.sqlite
+*.sqlite3
+
+## Ignore coverage reports
+
+coverage/
+*.coverage
+*.coveragexml
+
+## Ignore generated files
+
+*.designer.cs
+*.generated.cs
+
+## Ignore temporary files
+
+*.tmp
+*.temp
+*~
+
+## Ignore OS specific files
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## Ignore JetBrains IDE files
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+## Ignore Visual Studio files
+
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+.vs/
+
+## Ignore Docker files (optional - remove if you want to include them)
+
+## Dockerfile
+
+## docker-compose.yml
+
+## .dockerignore
+
+## Test Results
+
+TestResults/
+CoverageReport/
+
+## Coverage files
+
+*.coverage
+*.coveragexml
+
+## SonarQube files
+
+.sonarqube/

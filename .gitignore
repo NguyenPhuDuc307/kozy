@@ -1,0 +1,12 @@
+# Test Results
+TestResults/
+CoverageReport/
+
+# Coverage files
+*.coverage
+*.coveragexml
+
+# SonarQube files
+.sonarqube/
+
+.DS_Store

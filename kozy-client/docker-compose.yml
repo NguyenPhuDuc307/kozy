@@ -1,0 +1,25 @@
+services:
+  react-client:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    environment:
+      - NODE_ENV=production
+    container_name: react-client
+    restart: unless-stopped
+
+  # Optional: Add API service if you want to run both together
+  # react-api:
+  #   image: your-api-image:latest
+  #   ports:
+  #     - "5230:5230"
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Production
+  #   container_name: react-api
+  #   restart: unless-stopped
+
+networks:
+  default:
+    name: react-network
