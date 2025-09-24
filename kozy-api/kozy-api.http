@@ -1,5 +1,5 @@
 @kozy_api_HostAddress = http://localhost:5230/api
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3NTg1MTI0MTYsImV4cCI6MTc1ODUxNjAxNiwiaWF0IjoxNzU4NTEyNDE2LCJpc3MiOiJZb3VySXNzdWVyIiwiYXVkIjoiWW91ckF1ZGllbmNlIn0.mEVn0OS3eXjZ2rxW5l4B4NXy3P79IXRohb42KcskZBs
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE3NTg2MDE5MjIsImV4cCI6MTc1ODYwNTUyMiwiaWF0IjoxNzU4NjAxOTIyLCJpc3MiOiJZb3VySXNzdWVyIiwiYXVkIjoiWW91ckF1ZGllbmNlIn0.13SWgkpqk-sbYKuzzUlcwDDICaQ_NQF7CJf3MbJXMMY
 
 ### 1.1. Register
 POST {{kozy_api_HostAddress}}/auth/register
